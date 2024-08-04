@@ -2,6 +2,10 @@
 
 CropSage is a comprehensive web application designed to enhance food security in Nigeria by providing data-driven crop recommendations to farmers. Leveraging machine learning algorithms and real-time soil data analysis, CropSage aims to optimize crop selection and promote sustainable agricultural practices.
 
+## Video Demo
+
+Link to video demonstration: https://drive.google.com/drive/folders/1NCmjyQWuM8u7AvSN37bAnwM1k1hesN1P?usp=drive_link 
+
 ## Features
 
 - **Personalized Crop Recommendations**: Based on soil data input by farmers
