@@ -1,0 +1,10 @@
+{
+  "name": "cropsage-report-lambda",
+  "version": "1.0.0",
+  "description": "Lambda function to generate CropSage reports",
+  "main": "index.js",
+  "dependencies": {
+    "aws-sdk": "^2.1040.0",
+    "pdfkit": "^0.13.0"
+  }
+}
