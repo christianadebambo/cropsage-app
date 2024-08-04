@@ -1,0 +1,32 @@
+.footer {
+    background-color: #34495e;
+    color: white;
+    padding: 2rem 0;
+    text-align: center;
+  }
+  
+  .footerNav ul {
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 1rem;
+  }
+  
+  .footerNav li {
+    display: inline-block;
+    margin: 0 1rem;
+  }
+  
+  .footerNav a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .footerNav a:hover {
+    color: #3498db;
+  }
+  
+  .copyright {
+    margin-top: 1rem;
+    font-size: 0.9rem;
+  }

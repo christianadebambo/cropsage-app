@@ -1,0 +1,234 @@
+.recommendationsContainer {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  font-family: Arial, sans-serif;
+  background-color: #f0f4f8;
+}
+
+.title {
+  font-size: 2.5rem;
+  color: #2c3e50;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.description {
+  font-size: 1.1rem;
+  color: #34495e;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.recommendationsLayout {
+  display: flex;
+  gap: 2rem;
+  background-color: #ffffff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.recommendationsList {
+  flex: 1;
+  max-height: 600px;
+  overflow-y: auto;
+  padding: 1rem;
+  background-color: #f8f9fa;
+}
+
+.recommendationItem {
+  background-color: #ffffff;
+  border-radius: 8px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+}
+
+.recommendationItem:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.recommendationItem.selected {
+  border-color: #3498db;
+  background-color: #ebf5fb;
+}
+
+.recommendationItem h3 {
+  margin: 0;
+  color: #2c3e50;
+}
+
+.recommendationItem p {
+  margin: 0.5rem 0 0;
+  color: #7f8c8d;
+  font-size: 0.9rem;
+}
+
+.recommendationDetails {
+  flex: 2;
+  background-color: #ffffff;
+  padding: 2rem;
+  border-left: 1px solid #e0e0e0;
+}
+
+.detailsTitle {
+  color: #2c3e50;
+  margin-top: 0;
+  font-size: 1.8rem;
+  border-bottom: 2px solid #3498db;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.detailsSection {
+  margin-bottom: 2rem;
+}
+
+.sectionTitle {
+  color: #2c3e50;
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+}
+
+.cropName {
+  font-size: 1.6rem;
+  color: #27ae60;
+  font-weight: bold;
+}
+
+.soilDataList, .practicesList {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.soilDataList li, .practicesList li {
+  margin-bottom: 0.7rem;
+  font-size: 1.1rem;
+}
+
+.soilDataKey {
+  font-weight: bold;
+  color: #34495e;
+  margin-right: 0.5rem;
+}
+
+.practicesList li {
+  position: relative;
+  padding-left: 1.5rem;
+}
+
+.practicesList li::before {
+  content: '•';
+  color: #3498db;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.generatedDate {
+  font-style: italic;
+  color: #7f8c8d;
+  margin-top: 2rem;
+}
+
+.noSelection {
+  font-size: 1.2rem;
+  color: #7f8c8d;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.error {
+  color: #e74c3c;
+  font-size: 1.2rem;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.loading {
+  font-size: 1.2rem;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.noRecommendations {
+  text-align: center;
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 2rem;
+  margin-top: 2rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.noRecommendations p {
+  font-size: 1.2rem;
+  color: #34495e;
+  margin-bottom: 1rem;
+}
+
+.ctaButton {
+  display: inline-block;
+  background-color: #3498db;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 4px;
+  font-size: 1.1rem;
+  transition: background-color 0.3s ease;
+  margin-top: 1rem;
+}
+
+.ctaButton:hover {
+  background-color: #2980b9;
+}
+
+.soilDataUnit {
+  font-size: 0.9em;
+  color: #7f8c8d;
+  margin-left: 0.25rem;
+}
+
+@media (max-width: 768px) {
+  .recommendationsContainer {
+    padding: 1rem;
+  }
+
+  .title {
+    font-size: 2rem;
+  }
+
+  .description {
+    font-size: 1rem;
+  }
+
+  .recommendationsLayout {
+    flex-direction: column;
+  }
+
+  .recommendationsList {
+    max-height: none;
+    padding-right: 0;
+  }
+
+  .recommendationDetails {
+    border-left: none;
+    border-top: 1px solid #e0e0e0;
+  }
+
+  .noRecommendations {
+    padding: 1.5rem;
+  }
+
+  .noRecommendations p {
+    font-size: 1rem;
+  }
+
+  .ctaButton {
+    font-size: 1rem;
+    padding: 0.6rem 1.2rem;
+  }
+}

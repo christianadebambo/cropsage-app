@@ -1,0 +1,112 @@
+.homePage {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  padding-top: 4rem;
+}
+
+.title {
+  color: #2c3e50;
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.mission {
+  color: #34495e;
+  font-size: 1.2rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.benefits {
+  background-color: #ecf0f1;
+  padding: 2rem;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+}
+
+.benefits h2 {
+  color: #2c3e50;
+  margin-bottom: 1rem;
+}
+
+.benefits ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.benefits li {
+  color: #34495e;
+  margin-bottom: 0.5rem;
+  padding-left: 1.5rem;
+  position: relative;
+}
+
+.benefits li::before {
+  content: '✓';
+  color: #27ae60;
+  position: absolute;
+  left: 0;
+}
+
+.quickLinks h2 {
+  color: #2c3e50;
+  margin-bottom: 1rem;
+}
+
+.linkGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+.linkCard {
+  background-color: #3498db;
+  color: white;
+  text-decoration: none;
+  padding: 1rem;
+  border-radius: 8px;
+  text-align: center;
+  transition: background-color 0.3s ease;
+}
+
+.linkCard:hover {
+  background-color: #2980b9;
+}
+
+.error {
+  color: #e74c3c;
+  text-align: center;
+  font-weight: bold;
+  margin-top: 2rem;
+}
+
+.loading {
+  text-align: center;
+  font-weight: bold;
+  margin-top: 2rem;
+}
+
+@media (max-width: 768px) {
+  .homePage {
+    padding: 1rem;
+    padding-top: 3rem;
+  }
+
+  .title {
+    font-size: 2rem;
+  }
+
+  .mission {
+    font-size: 1rem;
+  }
+
+  .benefits {
+    padding: 1rem;
+  }
+
+  .linkGrid {
+    grid-template-columns: 1fr;
+  }
+}
